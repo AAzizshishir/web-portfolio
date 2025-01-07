@@ -1,11 +1,12 @@
-/* Font */
+/* FONT */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 :root {
   --titleColor: rgb(24, 24, 24);
   --textColor: rgb(117, 117, 117);
   --bgColor: rgb(253, 110, 10);
 }
-/* Reset Style */
+
+/* STYLE RESET */
 * {
   margin: 0;
   padding: 0;
@@ -16,16 +17,16 @@ body {
   font-family: "Open Sans", serif;
 }
 
-/* Header Area Style */
+/* HEADER AREA STYLE */
 .header {
-    background-color: #fff8f3;
-    background-image: url(./images/developer.png), url(./images/header_bg.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: top left, bottom right;
-    background-size: 100px 550px, 650px 400px;
-  }
+  background-color: #fff8f3;
+  background-image: url(./images/developer.png), url(./images/header_bg.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  background-size: 100px 550px, 650px 400px;
+}
 
-/* Navbar style */
+/* NABVAR STYLE */
 .navbar {
   width: 80%;
   padding: 10px;
@@ -56,11 +57,11 @@ body {
   letter-spacing: 0%;
   text-decoration: none;
 }
-/* Navbar style end */
+/* NAVBAR STYLE END */
 
-/* Button Style */
+/* BUTTON STYLE */
 .btn {
-  padding: 7px 12px;
+  padding: 10px 14px;
   border-radius: 3px;
   background: var(--bgColor);
   color: #fff;
@@ -73,7 +74,7 @@ body {
   cursor: pointer;
 }
 
-/* Hero Sectopn Style */
+/* HERO SECTION STYLE */
 .hero-section {
   display: flex;
 }
@@ -129,7 +130,7 @@ body {
 }
 /* Hero style end */
 
-/* Main */
+/* MAIN */
 main {
   width: 72%;
   margin: auto;
@@ -141,7 +142,7 @@ main section {
   text-align: center;
 }
 
-/* About Section Style */
+/* ABOUT SECTION STYLE */
 .section-title {
   font-size: 26px;
 }
@@ -180,7 +181,7 @@ main section {
   text-align: center;
 }
 
-/* Skills Section Style */
+/* SKILL SECTION STYLE */
 .skills .title-description {
   width: 690px;
   margin: 20px auto;
@@ -202,7 +203,10 @@ main section {
   margin-bottom: 14px;
 }
 
-/* Resume Section Style */
+/* RESUME SECTION STYLE */
+.resume .btn {
+  margin-top: 20px;
+}
 .education-experience {
   display: flex;
   justify-content: space-around;
@@ -228,11 +232,49 @@ main section {
   font-weight: 600;
   line-height: 20px;
 }
-.education-degree, .my-experience {
+.education-degree,
+.my-experience {
   border-bottom: 1px solid rgb(209, 209, 209);
   margin: 15px 0;
 }
-.education-degree:nth-last-child(1), .my-experience:nth-last-child(1){
-    border: none;
+.education-degree:nth-last-child(1),
+.my-experience:nth-last-child(1) {
+  border: none;
 }
-/* Resume style end */
+/* RESUME STYLE END */
+
+/* FOOTER AREA STYLE */
+.footer {
+  background-color: #fff8f3;
+  padding: 100px 130px;
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+.footer .description {
+  width: 400px;
+}
+.footer .icon-link i {
+  color: var(--bgColor);
+  margin: 0 5px;
+}
+.footer .footer-message form {
+  margin-top: 20px;
+}
+.footer-message form input {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+}
+.footer-message form textarea {
+  padding: 15px;
+  border: none;
+  width: 100%;
+}
+.footer-message input[type="submit"] {
+  width: 100px;
+}
