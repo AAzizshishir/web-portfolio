@@ -5,6 +5,7 @@
   --textColor: rgb(117, 117, 117);
   --bgColor: rgb(253, 110, 10);
 }
+/* Reset Style */
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +15,15 @@
 body {
   font-family: "Open Sans", serif;
 }
+
+/* Header Area Style */
+.header {
+    background-color: #fff8f3;
+    background-image: url(./images/developer.png), url(./images/header_bg.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+    background-size: 100px 550px, 650px 400px;
+  }
 
 /* Navbar style */
 .navbar {
@@ -46,6 +56,9 @@ body {
   letter-spacing: 0%;
   text-decoration: none;
 }
+/* Navbar style end */
+
+/* Button Style */
 .btn {
   padding: 7px 12px;
   border-radius: 3px;
@@ -59,13 +72,8 @@ body {
   background-color: #f06706;
   cursor: pointer;
 }
-.header {
-  background-color: #fff8f3;
-  background-image: url(./images/developer.png), url(./images/header_bg.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: top left, bottom right;
-  background-size: 100px 550px, 650px 400px;
-}
+
+/* Hero Sectopn Style */
 .hero-section {
   display: flex;
 }
@@ -119,19 +127,23 @@ body {
   height: 513px;
   width: 443px;
 }
+/* Hero style end */
 
 /* Main */
 main {
   width: 72%;
   margin: auto;
 }
-main section{
-    margin: 130px 0;
+main section {
+  margin: 130px 0;
+}
+.text-center {
+  text-align: center;
 }
 
 /* About Section Style */
-.section-title{
-    font-size: 26px;
+.section-title {
+  font-size: 26px;
 }
 .about {
   background-color: rgb(255, 248, 243);
@@ -142,7 +154,6 @@ main section{
   width: 638px;
   margin: auto;
   background-color: #fff;
-  text-align: center;
   border: 2px solid var(--textColor);
   padding: 10px;
 }
@@ -168,10 +179,8 @@ main section{
   letter-spacing: 0%;
   text-align: center;
 }
+
 /* Skills Section Style */
-.skills {
-  text-align: center;
-}
 .skills .title-description {
   width: 690px;
   margin: 20px auto;
@@ -192,3 +201,38 @@ main section{
   width: 33px;
   margin-bottom: 14px;
 }
+
+/* Resume Section Style */
+.education-experience {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  text-align: left;
+  margin-top: 80px;
+  color: rgb(71, 71, 71);
+}
+.education-experience h4 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 31px;
+}
+.education-experience h5 {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-bottom: 5px;
+}
+.education-experience h6 {
+  color: rgb(117, 117, 117);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.education-degree, .my-experience {
+  border-bottom: 1px solid rgb(209, 209, 209);
+  margin: 15px 0;
+}
+.education-degree:nth-last-child(1), .my-experience:nth-last-child(1){
+    border: none;
+}
+/* Resume style end */
