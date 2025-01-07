@@ -93,7 +93,7 @@ body {
   line-height: 88px;
   letter-spacing: 0%;
 }
-.hero-content .description {
+.description {
   color: var(--textColor);
   font-size: 13px;
   font-weight: 400;
@@ -107,12 +107,12 @@ body {
   color: var(--bgColor);
   margin-left: 10px;
 }
-.contact-btn:hover{
-    background-color: var(--bgColor);
-    color: #fff;
+.contact-btn:hover {
+  background-color: var(--bgColor);
+  color: #fff;
 }
-.contact-btn i{
-    color: var(--bgColor);
+.contact-btn i {
+  color: var(--bgColor);
 }
 
 .hero-section .hero-image img {
@@ -120,4 +120,51 @@ body {
   width: 443px;
 }
 
+/* Main */
+main {
+  width: 72%;
+  margin: auto;
+}
+
 /* About Section Style */
+.about {
+  background-color: rgb(255, 248, 243);
+  margin: 100px 0;
+  padding: 100px 0;
+  border-radius: 8px;
+}
+.about-content {
+  width: 638px;
+  margin: auto;
+  background-color: #fff;
+  text-align: center;
+  border: 2px solid var(--textColor);
+  padding: 10px;
+}
+.about .about-contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-contact p {
+  color: rgb(117, 117, 117);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.about-contact span {
+  color: rgb(117, 117, 117);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+/* Skills Section Style */
+.skills {
+  background-color: aqua;
+  height: 300px;
+}
