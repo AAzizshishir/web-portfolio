@@ -1,0 +1,16 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root{
+    --titleColor : rgb(24,24,24);
+    --textColor : rgb(117, 117, 117);
+    --bgColor : rgb(253, 110, 10);
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", serif;
+}
