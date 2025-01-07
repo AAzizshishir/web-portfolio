@@ -267,7 +267,7 @@ main section {
   padding: 15px;
   margin: 15px 0;
   border: none;
-  color: #fff;
+  outline: none;
   border-radius: 3px;
 }
 .footer-message form textarea {
